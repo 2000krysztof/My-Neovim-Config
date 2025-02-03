@@ -9,3 +9,4 @@ vim.api.nvim_command("set shiftwidth=4")
 
 vim.opt.scrolloff = 8
 vim.opt.incsearch = true
+

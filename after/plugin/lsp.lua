@@ -101,7 +101,16 @@ lspconfig.gdscript.setup({
 
 lspconfig.gopls.setup({
 	filetypes={".go"},
-	root_dir= util.root_pattern("main.go")
+	cmd={"/home/krzysztof/go/bin/gopls"},
+	root_dir= util.root_pattern("main.go"),
+	settings={
+		gopls = {
+			env={
+				GOOS="js",
+				GOARCH="wasm"
+			}
+		}
+	}
 })
 
 
